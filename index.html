@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Temperature Converter</h1>
+
+  <div class="container">
+    <input type="number" id="inputTemp" placeholder="Enter temperature" step="0.01">
+    <select id="unitFrom">
+      <option value="celsius">&deg; Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+    </select>
+    <br>
+    <button onclick="convert()">Convert</button>
+    <br>
+    <select id="unitTo">
+      <option value="celsius">&deg; Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+    </select>
+    <input type="text" id="result" readonly>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
